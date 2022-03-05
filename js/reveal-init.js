@@ -1,10 +1,11 @@
 Reveal.initialize({
+    hashOneBasedIndex: true,
     hash: true,
-    controls: true,
+    controls: false,
     progress: false,
     history: true,
     center: true,
     transition: 'convex',
     backgroundTransition: 'slide',
-    autoAnimateDuration: 10000,
+    autoAnimateDuration: 0.1,
 });

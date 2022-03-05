@@ -1,5 +1,6 @@
 .reveal-viewport{
     height:auto;
+    color: #fff;
 }
 .reveal .slides{
     transform: none !important;

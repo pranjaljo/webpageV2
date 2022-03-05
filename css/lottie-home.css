@@ -26,7 +26,7 @@
       font-weight: 500;
       font-size: calc(1.375rem + 1.5vw);
       line-height: 1.2;
-      color:#fff;
+      /* color:#fff; */
       text-align: center;
   }
   .intro-container .text.lead{
@@ -34,7 +34,7 @@
     font-weight: 300;
     margin-top: 0;
     margin-bottom: 1rem;
-    color:#fff;
+    /* color:#fff; */
     text-align: center;
   }
 
