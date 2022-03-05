@@ -1,0 +1,13 @@
+.reveal-viewport{
+    height:auto;
+}
+.reveal .slides{
+    transform: none !important;
+    inset: auto !important;
+    height: 100% !important;
+    width:100% !important;
+}
+.reveal .slides section{
+    top:0 !important;
+    height:100%;
+}   

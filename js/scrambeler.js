@@ -51,11 +51,7 @@ class TextScramble {
       return this.chars[Math.floor(Math.random() * this.chars.length)]
     }
   }
-  
-  // ——————————————————————————————————————————————————
-  // Example
-  // ——————————————————————————————————————————————————
-  
+
   const phrases = [
     'and this is my webpage',
     'and this is my rezume',
