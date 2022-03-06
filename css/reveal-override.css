@@ -1,6 +1,12 @@
+.reveal{
+    position: static;
+}
+
 .reveal-viewport{
-    height:auto;
+    height: auto;
     color: #fff;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 .reveal .slides{
     transform: none !important;
@@ -11,4 +17,8 @@
 .reveal .slides section{
     top:0 !important;
     height:100%;
-}   
+}
+
+/* ::-webkit-scrollbar {
+    width: 0px;
+  } */
