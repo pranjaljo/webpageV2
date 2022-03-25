@@ -2,7 +2,6 @@
     padding: 1rem;
 }
 
-
 .nav {
     display: flex;
     flex-wrap: wrap;
@@ -20,6 +19,7 @@
     background-color: transparent;
     border-bottom: .25rem solid transparent;
     text-decoration: none;
+    transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .nav-masthead .nav-link:hover,

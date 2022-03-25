@@ -26,7 +26,6 @@
       font-weight: 500;
       font-size: calc(1.375rem + 1.5vw);
       line-height: 1.2;
-      /* color:#fff; */
       text-align: center;
   }
   .intro-container .text.lead{
