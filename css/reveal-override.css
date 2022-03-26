@@ -25,3 +25,7 @@ body.reveal-viewport::-webkit-scrollbar {
     top: 0 !important;
     height: 100%;
 }
+
+.controls-arrow{
+    color:white;
+}

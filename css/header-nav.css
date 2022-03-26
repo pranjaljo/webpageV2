@@ -4,11 +4,6 @@
 
 .nav {
     display: flex;
-    /* flex-wrap: wrap; */
-    /* padding-left: 0; */
-    /* margin-bottom: 0; */
-    /* list-style: none; */
-    /* justify-content: center; */
     width: fit-content;
     margin: 0 auto;
     position: relative;
@@ -26,8 +21,8 @@
 }
 .nav-masthead .nav-link.additional-navs{
     display:flex;
-    gap: 14px;
-    z-index:2;
+    justify-content: space-between;
+    gap:10px;
 }
 .nav-masthead .nav-link.additional-navs span:nth-child(2){
     transition: .3s ease-in-out;
@@ -39,16 +34,16 @@
 }
 
 .secondary-nav:hover .additional-navs span:nth-child(2){
-    transform: rotate(90deg);
+    transform: rotate(-270deg);
 }
 .secondary-nav{
     position:relative;
     margin-left: 1rem;
+    min-width: 100px;
     transition: all 1s ease-in-out;
+    cursor: pointer;
 }
-.secondary-nav .nav-link{
-    
-}
+
 .secondary-nav .dropdown-nav{
     left: 0;
     position: absolute;
@@ -79,4 +74,33 @@
 .nav-masthead .active {
     color: #fff;
     border-bottom-color: #fff;
+}
+/* section[data-slide="experience"] {
+    padding: 1.5rem 1rem 1rem 1rem 
+} */
+/* section[data-slide="contact"] {
+    padding: 4.5rem 1rem 1rem 1rem 
+} */
+section[data-slide="experience"] .secondary-nav:hover .additional-navs span:nth-child(1),
+section[data-slide="contact"] .secondary-nav:hover .additional-navs span:nth-child(1){
+    visibility: hidden;
+}
+/* section[data-slide="experience"] .secondary-nav .dropdown-nav{
+    top: -36px;
+} */
+/* section[data-slide="contact"] .secondary-nav .dropdown-nav{
+    top:-72px;
+} */
+/* section[data-slide="contact"] .secondary-nav:hover .additional-navs span:nth-child(2){
+    transform: rotate(270deg);
+} */
+
+/* section[data-slide="experience"] .nav-masthead .additional-navs.nav-link:hover,
+section[data-slide="experience"] .nav-masthead .additional-navs.nav-link:focus{
+    border-bottom: none;
+} */
+
+section[data-slide="experience"] .secondary-nav:hover .additional-navs.active,
+section[data-slide="contact"] .secondary-nav:hover .additional-navs.active{
+    border-bottom: none;
 }
