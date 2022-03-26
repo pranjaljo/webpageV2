@@ -75,30 +75,11 @@
     color: #fff;
     border-bottom-color: #fff;
 }
-/* section[data-slide="experience"] {
-    padding: 1.5rem 1rem 1rem 1rem 
-} */
-/* section[data-slide="contact"] {
-    padding: 4.5rem 1rem 1rem 1rem 
-} */
+
 section[data-slide="experience"] .secondary-nav:hover .additional-navs span:nth-child(1),
 section[data-slide="contact"] .secondary-nav:hover .additional-navs span:nth-child(1){
     visibility: hidden;
 }
-/* section[data-slide="experience"] .secondary-nav .dropdown-nav{
-    top: -36px;
-} */
-/* section[data-slide="contact"] .secondary-nav .dropdown-nav{
-    top:-72px;
-} */
-/* section[data-slide="contact"] .secondary-nav:hover .additional-navs span:nth-child(2){
-    transform: rotate(270deg);
-} */
-
-/* section[data-slide="experience"] .nav-masthead .additional-navs.nav-link:hover,
-section[data-slide="experience"] .nav-masthead .additional-navs.nav-link:focus{
-    border-bottom: none;
-} */
 
 section[data-slide="experience"] .secondary-nav:hover .additional-navs.active,
 section[data-slide="contact"] .secondary-nav:hover .additional-navs.active{

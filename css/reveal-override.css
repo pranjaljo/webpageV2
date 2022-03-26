@@ -12,8 +12,6 @@ body.reveal-viewport::-webkit-scrollbar {
     display: none;
 }
 
-.reveal-viewport>.reveal {}
-
 .reveal .slides {
     transform: none !important;
     inset: auto !important;
