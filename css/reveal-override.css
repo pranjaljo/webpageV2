@@ -1,24 +1,29 @@
-.reveal{
-    position: static;
+body.reveal-viewport {
+    color: #fff;
+    /* overflow-x: hidden;
+    overflow-y: scroll;
+    --slide-width: 100% !important;
+    --slide-height: 100% !important;
+    -ms-overflow-style: none;
+    scrollbar-width: none; */
 }
 
-.reveal-viewport{
-    height: auto;
-    color: #fff;
-    overflow-x: hidden;
-    overflow-y: scroll;
-}
-.reveal .slides{
+/* body.reveal-viewport::-webkit-scrollbar {
+    display: none;
+} */
+
+.reveal .slides {
     transform: none !important;
     inset: auto !important;
     height: 100% !important;
-    width:100% !important;
-}
-.reveal .slides section{
-    top:0 !important;
-    height:100%;
+    width: 100% !important;
 }
 
-/* ::-webkit-scrollbar {
-    width: 0px;
-  } */
+.reveal .slides section {
+    top: 0 !important;
+    height: 100%;
+}
+
+.controls-arrow{
+    color:white;
+}
