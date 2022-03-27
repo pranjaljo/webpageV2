@@ -2,7 +2,6 @@
     height: 100vh;
     max-height: 100vh;
     overflow: hidden;
-    
 }
 
 .slide-wrapper main{
@@ -51,21 +50,23 @@ header{
 }
 .nav-masthead .nav-link.additional-navs span:nth-child(2){
     transition: .3s ease-in-out;
+    transform: rotate(-90deg);
 }
 
 .nav-masthead .nav-link:hover,
 .nav-masthead .nav-link:focus {
     border-bottom-color: rgba(255, 255, 255, .25);
 }
-
+.secondary-nav:hover{
+    min-width: 100px;
+}
 .secondary-nav:hover .additional-navs span:nth-child(2){
     transform: rotate(-270deg);
 }
 .secondary-nav{
     position:relative;
     margin-left: 1rem;
-    min-width: 100px;
-    transition: all 1s ease-in-out;
+    transition: min-width 1s ease-in-out;
     cursor: pointer;
 }
 
