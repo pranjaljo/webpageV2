@@ -6,7 +6,7 @@
 
 .slide-wrapper main{
     overflow-y:scroll;
-    padding: 1rem;
+    padding: 1rem 1rem 5rem 1rem;
     --slide-width: 100% !important;
     --slide-height: 100% !important;
     -ms-overflow-style: none;
