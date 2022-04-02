@@ -1,0 +1,136 @@
+.about-me-wrapper{
+    margin: 7.3rem auto 0;
+    padding: 1rem;
+    width: 800px;
+    line-height: 2;
+    box-shadow: rgb(0 0 0 / 56%) 0px 22px 70px 4px;
+    text-align: justify;
+    position: relative;
+    /* background: #2c3e50;
+    border-radius: 10px; */
+}
+section[data-slide="about-me"] .lottie-container-2{
+    position: absolute;
+    top: -150px;
+    right: 0;
+    height: 150px;
+    overflow: hidden;
+}
+section[data-slide="about-me"] .lottie-container-2 lottie-player{
+    height:200px;
+    width:200px;
+}
+
+.exp-wrapper input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+.exp-wrapper .row {
+    display: flex;
+    width:800px;
+    margin: 2rem auto;
+    /* box-shadow: rgb(0 0 0 / 56%) 0px 22px 70px 4px;
+    background: #2c3e50;
+    border-radius:10px; */
+}
+.exp-wrapper .row .col {
+    flex: 1;
+}
+.exp-wrapper .row .col:last-child {
+    margin-left: 1em;
+}
+/* Accordion styles */
+.exp-wrapper .tabs {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+}
+.exp-wrapper .tab {
+    width: 100%;
+    color: white;
+    overflow: hidden;
+    box-shadow: none;
+}
+.exp-wrapper .tab-label {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    font-weight: bold;
+    cursor: pointer;
+   /* Icon */
+}
+.exp-wrapper .tab-label:hover {
+    background: #1a252f;
+}
+.exp-wrapper .tab-label::after {
+    content: "\276F";
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    transition: all 0.35s ease-in-out;
+}
+.exp-wrapper .tab-content {
+    max-height: 0;
+    padding: 0 1em;
+    color: #2c3e50;
+    background: white;
+    transition: all 0.75s ease-in-out;
+    text-align: justify;
+    font-size: 15px;
+    padding:1rem;
+    margin-bottom:-32px;
+}
+
+.exp-wrapper .tab-content p{
+    margin:0;
+    padding-bottom: 1.25rem;
+    position: relative;
+    line-height: 1.375rem;
+}
+
+.exp-wrapper .tab-content p:not(.tab-company):not(.tab-product)::before{
+    content: "▹";
+    position: absolute;
+    z-index: 10;
+    left: 0px;
+}
+.exp-wrapper .tab-content p:not(.tab-company):not(.tab-product){
+    padding-left:25px;
+}
+
+.exp-wrapper .tab-content p.tab-company{
+    font-size: 14px;
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+.exp-wrapper input:focus + .tab-label{
+    background: #1a252f;
+    pointer-events: none;
+}
+.exp-wrapper input:focus + .tab-label::after{
+    transform: rotate(90deg);
+}
+.exp-wrapper input:focus ~ .tab-content{
+    max-height: 100vh;
+    margin-bottom:0;
+}
+
+.exp-wrapper .tab-title{
+    min-width: 180px;
+    display: inline-block;
+    text-align: left;
+}
+.exp-wrapper .tab-company{
+    color: #e64700;
+    font-family: 'Roboto Mono', monospace;
+    padding-bottom: 0 !important;
+    font-size: 14px;
+}
+
+.exp-wrapper .tab-product{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+    padding-bottom: 30px;
+}
