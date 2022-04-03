@@ -1,3 +1,7 @@
+:root{
+    --exp-title-width: 180px;
+    --exp-company-color: #e64700;
+}
 .about-me-wrapper{
     margin: 7.3rem auto 0;
     padding: 1rem;
@@ -28,8 +32,8 @@ section[data-slide="about-me"] .lottie-container-2 lottie-player{
 }
 .exp-wrapper .row {
     display: flex;
-    width:800px;
-    margin: 2rem auto;
+    width:600;
+    margin: 3rem auto;
     /* box-shadow: rgb(0 0 0 / 56%) 0px 22px 70px 4px;
     background: #2c3e50;
     border-radius:10px; */
@@ -58,7 +62,11 @@ section[data-slide="about-me"] .lottie-container-2 lottie-player{
     padding: 1em;
     font-weight: bold;
     cursor: pointer;
-   /* Icon */
+}
+
+.exp-wrapper .tab-label > span{
+    display:flex;
+    position: relative;
 }
 .exp-wrapper .tab-label:hover {
     background: #1a252f;
@@ -118,12 +126,12 @@ section[data-slide="about-me"] .lottie-container-2 lottie-player{
 }
 
 .exp-wrapper .tab-title{
-    min-width: 180px;
+    min-width: var(--exp-title-width);
     display: inline-block;
     text-align: left;
 }
 .exp-wrapper .tab-company{
-    color: #e64700;
+    color: var(--exp-company-color);
     font-family: 'Roboto Mono', monospace;
     padding-bottom: 0 !important;
     font-size: 14px;
@@ -133,4 +141,31 @@ section[data-slide="about-me"] .lottie-container-2 lottie-player{
     font-family: 'Roboto Mono', monospace;
     font-size: 14px;
     padding-bottom: 30px;
+}
+
+.exp-wrapper a{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    top: -15px;
+    position: absolute;
+    left: var(--exp-title-width);
+    width: max-content;
+    text-decoration: none;
+    pointer-events: all;
+}
+.exp-wrapper a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 3px;
+    top: 35px;
+    width: 0;
+    background: transparent;
+    transition: all 1s ease;
+    margin-top: 0.25rem;
+}
+.exp-wrapper a:hover::after {
+    width: 100%;
+    background: var(--exp-company-color);
 }
