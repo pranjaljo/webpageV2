@@ -22,79 +22,30 @@
 </head>
 </head>
 
-<body class="back-center">
-    <!-- <canvas></canvas> -->
-    <!-- <header>
-        <nav class="nav nav-masthead">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <span class="secondary-nav" onclick="location='#/2'">
-                <a class="nav-link additional-navs" href="#/2">
-                    <span>About Me</span>
-                    <span>&#10148;</span>
-                </a>
-                <span class="dropdown-nav">
-                    <a class="nav-link">&#160;</a>
-                    <a class="nav-link" href="#/2/2">Experience</a>
-                    <a class="nav-link" href="#/2/3">Contact</a>
-                </span>
-            </span>
-            <a class="nav-link shift-rigth" href="#/3">Projects</a>
-            <a class="nav-link" href="#/4">Resume</a>
-        </nav>
-    </header> -->
+<body>
     <header>
-        <nav class="nav nav-masthead">
-            <div class="nav-container">
+        <main>
+            <button onmouseenter="blurBackground()" onmouseleave="unBlurBackground()">
                 <span class="nav-link">Home</span>
-                <div class="inner-nav">
-                    <div><span class="nav-link">Home</span></div>
-                </div>
-            </div>
-            <div class="nav-container">
+            </button>
+            <button onmouseenter="blurBackground()" onmouseleave="unBlurBackground()">
                 <span class="nav-link">About Me</span>
-                <div class="inner-nav">
-                    <div><span class="nav-link">About Me</span></div>
-                    <div><span class="nav-link">Experience</span></div>
-                    <div><span class="nav-link">Contact</span></div>
-                </div>
-            </div>
-            <div class="nav-container">
+            </button>
+            <button onmouseenter="blurBackground()" onmouseleave="unBlurBackground()">
                 <span class="nav-link">Projects</span>
-                <div class="inner-nav">
-                    <div><span class="nav-link">Projects</span></div>
-                </div>
-            </div>
-            <div class="nav-container">
+            </button>
+            <button onmouseenter="blurBackground()" onmouseleave="unBlurBackground()">
                 <span class="nav-link">Resume</span>
-                <div class="inner-nav">
-                    <div><span class="nav-link">Resume</span></div>
-                </div>
-            </div>
-        </nav>
+            </button>
+        </main>
     </header>
-
-    <div class="reveal" data-info="parent-wrapper;reveal.js">
+    <div class="blured-background"></div>
+    <div class="cursor cursor--large"></div>
+    <div class="cursor cursor--small"></div>
+    <div class="reveal " data-info="parent-wrapper;reveal.js">
         <div class="slides" data-info="secondary-wrapper;reveal.js">
             <section data-slide="home">
                 <div class="slide-wrapper">
-                    <!-- <header>
-                        <nav class="nav nav-masthead">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            <span class="secondary-nav" onclick="location='#/2'">
-                                <a class="nav-link additional-navs" href="#/2">
-                                    <span>About Me</span>
-                                    <span>&#10148;</span>
-                                </a>
-                                <span class="dropdown-nav">
-                                    <a class="nav-link">&#160;</a>
-                                    <a class="nav-link" href="#/2/2">Experience</a>
-                                    <a class="nav-link" href="#/2/3">Contact</a>
-                                </span>
-                            </span>
-                            <a class="nav-link shift-rigth" href="#/3">Projects</a>
-                            <a class="nav-link" href="#/4">Resume</a>
-                        </nav>
-                    </header> -->
                     <main>
                         <div class="lottie-container">
                             <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_l4fgppor.json"
@@ -111,31 +62,13 @@
             <section data-slide="about-me-wrapper">
                 <section data-slide="about-me">
                     <div class="slide-wrapper">
-                        <!-- <header>
-                            <nav class="nav nav-masthead">
-                                <a class="nav-link" href="#">Home</a>
-                                <span class="secondary-nav">
-                                    <a class="nav-link additional-navs active" aria-current="page" href="#/2">
-                                        <span>About Me</span>
-                                        <span>&#10148;</span>
-                                    </a>
-                                    <span class="dropdown-nav">
-                                        <a class="nav-link">&#160;</a>
-                                        <a class="nav-link" href="#/2/2">Experience</a>
-                                        <a class="nav-link" href="#/2/3">Contact</a>
-                                    </span>
-                                </span>
-                                <a class="nav-link shift-rigth" href="#/3">Projects</a>
-                                <a class="nav-link" href="#/4">Resume</a>
-                            </nav>
-                        </header> -->
                         <main>
                             <div class="about-me-wrapper">
                                 <div class="lottie-container-2">
                                     <lottie-player
                                         --src="https://assets7.lottiefiles.com/private_files/lf30_7kuqvbif.json"
-                                        src="json/moonrover.json"
-                                        background="transparent" speed="1" loop autoplay></lottie-player>
+                                        src="json/moonrover.json" background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
                                 </div>
                                 <div class="about-me-container">
                                     Hi, I'm a software developer currently working at kyndryl. I consider myself to be a
@@ -157,24 +90,6 @@
                 </section>
                 <section data-slide="experience">
                     <div class="slide-wrapper">
-                        <!-- <header>
-                            <nav class="nav nav-masthead">
-                                <a class="nav-link" href="#">Home</a>
-                                <span class="secondary-nav">
-                                    <a class="nav-link additional-navs active" aria-current="page" href="#/2/2">
-                                        <span>Experience</span>
-                                        <span>&#10148;</span>
-                                    </a>
-                                    <span class="dropdown-nav">
-                                        <a class="nav-link" href="#/2">About Me</a>
-                                        <a class="nav-link active" href="#/2/2">Experience</a>
-                                        <a class="nav-link" href="#/2/3">Contact</a>
-                                    </span>
-                                </span>
-                                <a class="nav-link shift-rigth" href="#/3">Projects</a>
-                                <a class="nav-link" href="#/4">Resume</a>
-                            </nav>
-                        </header> -->
                         <main>
                             <div class="exp-wrapper">
                                 <div class="row">
@@ -185,15 +100,19 @@
                                                 <label class="tab-label" for="chck1">
                                                     <span>
                                                         <span class="tab-title">Software Developer</span>
-                                                        <a class="tab-company" target="_blank" href="https://www.kyndryl.com/">@ Kyndryl</a>
+                                                        <a class="tab-company" target="_blank"
+                                                            href="https://www.kyndryl.com/">@ Kyndryl</a>
                                                     </span>
                                                 </label>
                                                 <div class="tab-content">
                                                     <p class="tab-company">July 2021 - current</p>
                                                     <p class="tab-product">Product: Multicloud managment platform</p>
-                                                    <p>Orignally joined IBM, became part of kyndryl after the company spun off in september 2021</p>
-                                                    <p>Worked on various enchancements for the product. Wrote clean, matainable and mordern code </p>
-                                                    <p>wrote various test cases to improve code coverage and improve quality of the application</p>
+                                                    <p>Orignally joined IBM, became part of kyndryl after the company
+                                                        spun off in september 2021</p>
+                                                    <p>Worked on various enchancements for the product. Wrote clean,
+                                                        matainable and mordern code </p>
+                                                    <p>wrote various test cases to improve code coverage and improve
+                                                        quality of the application</p>
                                                     <p>Angular, Carbon design system, HTML, SCSS, GIT JIRA,</p>
                                                 </div>
                                             </div>
@@ -202,16 +121,23 @@
                                                 <label class="tab-label" for="chck2">
                                                     <span>
                                                         <span class="tab-title">Web Developer Intern</span>
-                                                        <a class="tab-company" target="_blank" href="https://www.dronahq.com/">@ DronaHQ</a>
+                                                        <a class="tab-company" target="_blank"
+                                                            href="https://www.dronahq.com/">@ DronaHQ</a>
                                                     </span>
                                                 </label>
                                                 <div class="tab-content">
                                                     <p class="tab-company">Dec 2020 - May 2020</p>
-                                                    <p class="tab-product">Product: Low code app development platform</p>
-                                                    <p>Developed custom selection control and input control for the DronaHQ application. Added further functionalities to some pre-existing controls to improve user experience</p>
-                                                    <p>Created reusable templates for various properties to improve UI consistency and functionality. The Templates also allow other developers to create new controls with ease
+                                                    <p class="tab-product">Product: Low code app development platform
                                                     </p>
-                                                    <p>Created a new Billing page for the application and also worked on the offical website of DronaHQ</p>
+                                                    <p>Developed custom selection control and input control for the
+                                                        DronaHQ application. Added further functionalities to some
+                                                        pre-existing controls to improve user experience</p>
+                                                    <p>Created reusable templates for various properties to improve UI
+                                                        consistency and functionality. The Templates also allow other
+                                                        developers to create new controls with ease
+                                                    </p>
+                                                    <p>Created a new Billing page for the application and also worked on
+                                                        the offical website of DronaHQ</p>
                                                     <p>HTML, Less, Coffeescript, jQuery, Semantic UI, rivet.js,
                                                         _underscore.js, backbone.js, handlebar.js, SVN</p>
                                                 </div>
@@ -220,7 +146,8 @@
                                                 <input type="checkbox" id="chck3">
                                                 <label class="tab-label" for="chck3">
                                                     <span>
-                                                        <span class="tab-title" target="_blank" href="https://sbi.co.in/">Summer Intern</span>
+                                                        <span class="tab-title" target="_blank"
+                                                            href="https://sbi.co.in/">Summer Intern</span>
                                                         <a class="tab-company">@ SBI</a>
                                                     </span>
                                                 </label>
@@ -238,7 +165,8 @@
                                                 <input type="checkbox" id="chck4">
                                                 <label class="tab-label" for="chck4">
                                                     <span>
-                                                        <span class="tab-title" target="_blank" href="https://www.dronahq.com/">Summer Intern</span>
+                                                        <span class="tab-title" target="_blank"
+                                                            href="https://www.dronahq.com/">Summer Intern</span>
                                                         <a class="tab-company">@ DronaHQ</a>
                                                     </span>
                                                 </label>
@@ -264,24 +192,6 @@
                 </section>
                 <section data-slide="contact">
                     <div class="slide-wrapper">
-                        <!-- <header>
-                            <nav class="nav nav-masthead">
-                                <a class="nav-link" href="#">Home</a>
-                                <span class="secondary-nav">
-                                    <a class="nav-link additional-navs active" aria-current="page" href="#/2/3">
-                                        <span>Contact</span>
-                                        <span>&#10148;</span>
-                                    </a>
-                                    <span class="dropdown-nav">
-                                        <a class="nav-link" href="#/2">About Me</a>
-                                        <a class="nav-link" href="#/2/">Experience</a>
-                                        <a class="nav-link active">Contact</a>
-                                    </span>
-                                </span>
-                                <a class="nav-link shift-rigth" href="#/3">Projects</a>
-                                <a class="nav-link" href="#/4">Resume</a>
-                            </nav>
-                        </header> -->
                         <main>
                             <div class="login-box">
                                 <p class="lead text-contact">and this is my webpage</p>
@@ -290,22 +200,22 @@
                                     <div class="user-box">
                                         <input type="text" name="" required="">
                                         <label>Name</label>
-                                    >
-                                    <div class="user-box">
-                                        <input type="text" name="" required="">
-                                        <label>Email</label>
-                                    </div>
-                                    <div class="user-box">
-                                        <textarea rows="1" autofocus></textarea>
-                                        <label>Message</label>
-                                    </div>
-                                    <a href="#">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        Submit
-                                    </a>
+                                        >
+                                        <div class="user-box">
+                                            <input type="text" name="" required="">
+                                            <label>Email</label>
+                                        </div>
+                                        <div class="user-box">
+                                            <textarea rows="1" autofocus></textarea>
+                                            <label>Message</label>
+                                        </div>
+                                        <a href="#">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            Submit
+                                        </a>
                                 </form>
                             </div>
                             <div class="icon-conatiner">
@@ -347,24 +257,6 @@
             </section>
             <section data-slide="projects">
                 <div class="slide-wrapper">
-                    <!-- <header>
-                        <nav class="nav nav-masthead">
-                            <a class="nav-link" href="#">Home</a>
-                            <span class="secondary-nav" onclick="location='#/2'">
-                                <a class="nav-link additional-navs" href="#/2">
-                                    <span>About Me</span>
-                                    <span>&#10148;</span>
-                                </a>
-                                <span class="dropdown-nav">
-                                    <a class="nav-link">&#160;</a>
-                                    <a class="nav-link" href="#/2/2">Experience</a>
-                                    <a class="nav-link" href="#/2/3">Contact</a>
-                                </span>
-                            </span>
-                            <a class="nav-link shift-rigth active" aria-current="page" href="#/3">Projects</a>
-                            <a class="nav-link" href="#/4">Resume</a>
-                        </nav>
-                    </header> -->
                     <main>
                         <div class="project-description">Here are some of the projects i worked on</div>
                         <div class="project-main">
@@ -489,13 +381,13 @@
             </section>
         </div>
     </div>
-
-    </div>
-    <script src="js/star.js"></script>
+    <!-- <script src="js/temp---star.js"></script> -->
+    <script src="js/dist/gsap.js"></script>
     <script src="js/dist/lottie.js"></script>
     <script src="js/dist/reveal.js"></script>
     <script src="js/reveal-init.js"></script>
     <script src="js/scrambeler.js"></script>
+    <script src="js/mousePointer.js"></script>
 </body>
 
 </html>

@@ -9,6 +9,8 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
+    cursor: none;
+    transition: all 1s ease-in;
 }
 
 #background-firefly-canvas {
@@ -26,24 +28,20 @@ body {
 }
 
 body {
-    /* background: radial-gradient(ellipse at bottom, #3d5570 0%, #090A0F 100%); */
     background: radial-gradient(ellipse at center, #3d5570 0%, #090A0F 100%);
     margin: 0;
     overflow: hidden;
     transition: all 1s ease;
-  }
+}
 
-/* .back-center{
-    background: radial-gradient(ellipse at center, #3d5570 0%, #090A0F 100%);
-} */
-.slide-wrapper{
+.slide-wrapper {
     height: 100vh;
     max-height: 100vh;
     overflow: hidden;
 }
 
-.slide-wrapper main{
-    overflow-y:scroll;
+.slide-wrapper main {
+    overflow-y: scroll;
     padding: 1rem 1rem 5rem 1rem;
     --slide-width: 100% !important;
     --slide-height: 100% !important;
@@ -54,7 +52,19 @@ body {
 .slide-wrapper main::-webkit-scrollbar {
     display: none;
 }
-/* canvas{
-    position:absolute;
+
+.blured-background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #090a0f73;
+    opacity: 0;
+    z-index: 5;
+    transition: all var(--transition-blur);
+    visibility: hidden;
 }
-   */
+
+.blur {
+    opacity: 1;
+    visibility: var(--transition-blur);
+}
