@@ -13,14 +13,18 @@ Reveal.initialize({
     transitionSpeed: 'slow'
 });
 
-// const body = document.querySelector("body");
-// Reveal.on( 'slidechanged', event => {
-//     if(event.indexh === 0 && event.indexv === 0){
-//         body.classList.add('back-center');
-//     } else{
-//         body.classList.remove('back-center');
-//         //body.style.setProperty("background", "radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%)");
-//     }
-//   } );
+const header = document.querySelector("header");
+Reveal.on( 'slidechanged', event => {
+	console.log('sdsd');
+	header.querySelectorAll("button").forEach((btn) => {btn.classList.remove('active')});
+	if(event.indexh === 0){
+		header.querySelector("button[data-header='home']").classList.add('active')
+	} else if(event.inhdexh ===1){
+
+	} else if(event.indexh ===2){
+		//slide3
+		header.querySelector("button[data-header='projects']").classList.add('active')
+	}
+  } );
 
 
