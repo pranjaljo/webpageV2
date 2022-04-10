@@ -20,7 +20,7 @@ let cursorOuterOriginalState = {
 	width: cursorOuter.getBoundingClientRect().width,
 	height: cursorOuter.getBoundingClientRect().height,
 };
-const buttons = document.querySelectorAll("main button");
+const buttons = document.querySelectorAll("header main button:not(.not), header main .inner-nav, header main .inner-nav-container");
 
 buttons.forEach((button) => {
 	button.addEventListener("pointerenter", handleMouseEnter);
@@ -71,9 +71,8 @@ function handleMouseEnter(e) {
 		x: targetBox.left, 
 		y: targetBox.top + scrollHeight,
 		width: targetBox.width,
-		height: targetBox.width,
+		height: e.currentTarget.className === 'inner-nav' ? '175px' : targetBox.height,
 		borderRadius: 0,
-		// backgroundColor: "rgba(255, 255, 255, 0.1)",
 	});
 }
 
@@ -81,21 +80,26 @@ function handleMouseLeave(e) {
 	isStuck = false;
 	gsap.to(cursorOuter, 0.2, {
 		width: cursorOuterOriginalState.width,
-		height: cursorOuterOriginalState.width,
+		height: cursorOuterOriginalState.height,
 		borderRadius: "50%",
 		backgroundColor: "transparent",
 	});
 }
-
-
 const $background = document.querySelector(".blured-background");
 const $header = document.querySelector("header");
-function blurBackground(){
+function blurBackground(increaseHeight){
+	if(increaseHeight){
+		cursorOuter.classList.add('cursor-max-height-override');
+	}
+	
     $header.classList.add('dark-background');
     $background.classList.add('blur');
 }
 
-function unBlurBackground(){
+function unBlurBackground(increaseHeight){
+	if(increaseHeight){
+		cursorOuter.classList.remove('cursor-max-height-override');
+	}
     $header.classList.remove('dark-background');
     $background.classList.remove('blur');
 }
