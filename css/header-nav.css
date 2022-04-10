@@ -58,18 +58,26 @@ header main:hover button:hover {
     top: 0;
     pointer-events: none;
     z-index: 100;
+    background: white;
+    position: absolute;
+    /* z-index: 999; */
+    pointer-events: none;
+    mix-blend-mode: difference;
 }
 
 .cursor--large {
-    --size: 40px;
-    border: 1px solid #ff3c3c;
+    --size: 30px;
+    border: 1px solid white;
+    background: white !important;
     max-height: 58px !important;
 }
 
 .cursor--small {
     --size: 10px;
-    background: #ff3c3c;
+    /* background: #ff3c3c; */
+    /* mix-blend-mode: difference; */
     transform: translate(-50%, -50%);
+    
 }
 
 .dark-background {

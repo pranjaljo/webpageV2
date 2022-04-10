@@ -29,19 +29,12 @@ buttons.forEach((button) => {
 
 document.body.addEventListener("pointermove", updateCursorPosition);
 document.body.addEventListener("pointerdown", () => {
-	console.log('dsdsd');
-	// gsap.to(cursorInner, {scale: 4.5});
-	// gsap.to(cursorOuter, {scale: .4});
-
-
 	gsap.to(cursorInner, 0.15, {
 		scale: 2,
 	});
 });
 document.body.addEventListener("pointerup", () => {
 	console.log('sdsdsd');
-	// gsap.to(cursorInner, {scale: 4.5});
-	// gsap.to(cursorOuter, {scale: .4});
 	gsap.to(cursorInner, 0.15, {
 		scale: 1,
 	});
@@ -80,7 +73,7 @@ function handleMouseEnter(e) {
 		width: targetBox.width,
 		height: targetBox.width,
 		borderRadius: 0,
-		backgroundColor: "rgba(255, 255, 255, 0.1)",
+		// backgroundColor: "rgba(255, 255, 255, 0.1)",
 	});
 }
 
