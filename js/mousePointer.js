@@ -73,6 +73,7 @@ function handleMouseEnter(e) {
 		width: targetBox.width,
 		height: e.currentTarget.className === 'inner-nav' ? '175px' : targetBox.height,
 		borderRadius: 0,
+		//backgroundColor: "transparent",
 	});
 }
 
@@ -82,7 +83,7 @@ function handleMouseLeave(e) {
 		width: cursorOuterOriginalState.width,
 		height: cursorOuterOriginalState.height,
 		borderRadius: "50%",
-		backgroundColor: "transparent",
+		//backgroundColor: "white",
 	});
 }
 const $background = document.querySelector(".blured-background");
