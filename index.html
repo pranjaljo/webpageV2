@@ -29,7 +29,10 @@
             <button data-header="home" class="active" onmouseenter="blurBackground()" onmouseleave="unBlurBackground()" onclick="location='#/1'">
                 <span class="nav-link">Home</span>
             </button>
-            <div class="inner-nav-container" onmouseenter="blurBackground(true)" onmouseleave="unBlurBackground(true)">
+            <button data-header="about-me-new" class="active" onmouseenter="blurBackground()" onmouseleave="unBlurBackground()" onclick="location='#/2'">
+                <span class="nav-link">About me</span>
+            </button>
+            <!-- <div class="inner-nav-container" onmouseenter="blurBackground(true)" onmouseleave="unBlurBackground(true)">
                 <button class="not" data-header="about-me" onclick="location='#/2'">
                     <span class="nav-link">About Me</span>
                 </button>
@@ -39,9 +42,9 @@
                     <div class="inner-nav-link" onclick="location='#/2/2'">Experience</div>
                     <div class="inner-nav-link" onclick="location='#/2/3'">Contact</div>
                 </div>
-            </div>
-            <button data-header="projects" onmouseenter="blurBackground()" onmouseleave="unBlurBackground()" onclick="location='#/3'">
-                <span class="nav-link">Projects</span>
+            </div> -->
+            <button data-header="contact" onmouseenter="blurBackground()" onmouseleave="unBlurBackground()" onclick="location='#/3'">
+                <span class="nav-link">Contact</span>
             </button>
             <button onmouseenter="blurBackground()" onmouseleave="unBlurBackground()">
                 <span class="nav-link">Resume</span>
@@ -68,7 +71,257 @@
                     </main>
                 </div>
             </section>
-            <section data-slide="about-me-wrapper">
+            <section class="about-me-new">
+                <div class="slide-wrapper">
+                    <main>
+                        <div class="about-me-wrapper">
+                            <!-- <div class="about-me-text-container"> Who AM I ?</div> -->
+                            <div class="lottie-container-2">
+                                <lottie-player src="https://assets7.lottiefiles.com/private_files/lf30_7kuqvbif.json"
+                                    --src="json/moonrover.json" background="transparent" speed="1" loop autoplay>
+                                </lottie-player>
+                            </div>
+                            <div class="about-me-container">
+                                Hi, I'm a software developer currently working at kyndryl. I consider myself to be a
+                                'forever student' always ready to learn and to prove myself
+                                I've been developing my skill-set to focus on what's most suited to getting the job
+                                done quickly and effectively.
+                                <br><br>
+                                My abundant energy fuels me in the pursuit of many interests, hobbies, areas of
+                                study and artistic endeavors. I’m a fast learner, able to pick up new skills and
+                                juggle different projects and roles with relative ease.
+                                <br><br>
+                                I think the easiest solutions would be to somehow fake absolute positioning or to
+                                get flexbox to show the items in order (top to bottom) without explicitly setting a
+                                height on the container. Both of which I tried with no satisfactory results.
+                            </div>
+                        </div>
+                        <div class="exp-mega-wrapper">     
+                            <div class="exp-wrapper">
+                                <div class="lottie-container-3">
+                                    <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_euaveaxu.json"  background="transparent"  speed="1" loop autoplay></lottie-player>
+                                </div>
+                                <div class="box-title">Where I’ve Worked</div> 
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="tabs">
+                                            <div class="tab">
+                                                <input type="checkbox" id="chck1">
+                                                <label class="tab-label" for="chck1">
+                                                    <span>
+                                                        <span class="tab-title">Software Developer</span>
+                                                        <a class="tab-company" target="_blank"
+                                                            href="https://www.kyndryl.com/">@ Kyndryl</a>
+                                                    </span>
+                                                </label>
+                                                <div class="tab-content">
+                                                    <p class="tab-company">July 2021 - current</p>
+                                                    <p class="tab-product">Product: Multicloud managment platform</p>
+                                                    <p>Orignally joined IBM, became part of kyndryl after the company
+                                                        spun off in september 2021</p>
+                                                    <p>Worked on various enchancements for the product. Wrote clean,
+                                                        matainable and mordern code </p>
+                                                    <p>wrote various test cases to improve code coverage and improve
+                                                        quality of the application</p>
+                                                    <p>Angular, Carbon design system, HTML, SCSS, GIT JIRA,</p>
+                                                </div>
+                                            </div>
+                                            <div class="tab">
+                                                <input type="checkbox" id="chck2">
+                                                <label class="tab-label" for="chck2">
+                                                    <span>
+                                                        <span class="tab-title">Web Developer Intern</span>
+                                                        <a class="tab-company" target="_blank"
+                                                            href="https://www.dronahq.com/">@ DronaHQ</a>
+                                                    </span>
+                                                </label>
+                                                <div class="tab-content">
+                                                    <p class="tab-company">Dec 2020 - May 2020</p>
+                                                    <p class="tab-product">Product: Low code app development platform
+                                                    </p>
+                                                    <p>Developed custom selection control and input control for the
+                                                        DronaHQ application. Added further functionalities to some
+                                                        pre-existing controls to improve user experience</p>
+                                                    <p>Created reusable templates for various properties to improve UI
+                                                        consistency and functionality. The Templates also allow other
+                                                        developers to create new controls with ease
+                                                    </p>
+                                                    <p>Created a new Billing page for the application and also worked on
+                                                        the offical website of DronaHQ</p>
+                                                    <p>HTML, Less, Coffeescript, jQuery, Semantic UI, rivet.js,
+                                                        _underscore.js, backbone.js, handlebar.js, SVN</p>
+                                                </div>
+                                            </div>
+                                            <div class="tab">
+                                                <input type="checkbox" id="chck3">
+                                                <label class="tab-label" for="chck3">
+                                                    <span>
+                                                        <span class="tab-title" target="_blank"
+                                                            href="https://sbi.co.in/">Summer Intern</span>
+                                                        <a class="tab-company">@ SBI</a>
+                                                    </span>
+                                                </label>
+                                                <div class="tab-content">
+                                                    <p class="tab-company">Jun - July 2020</p>
+                                                    <p class="tab-product">Product: Productivity Metric Application</p>
+                                                    <p>Assisted in the development of Productivity Metric Application
+                                                    </p>
+                                                    <p>Created loader animation and UI components by using Angular
+                                                        Material</p>
+                                                    <p>Angular, Angular Material, Git, HTML, CSS</p>
+                                                </div>
+                                            </div>
+                                            <div class="tab">
+                                                <input type="checkbox" id="chck4">
+                                                <label class="tab-label" for="chck4">
+                                                    <span>
+                                                        <span class="tab-title" target="_blank"
+                                                            href="https://www.dronahq.com/">Summer Intern</span>
+                                                        <a class="tab-company">@ DronaHQ</a>
+                                                    </span>
+                                                </label>
+                                                <div class="tab-content">
+                                                    <p class="tab-company">April - May 2020</p>
+                                                    <p class="tab-product">Product: Low code app development platform
+                                                    </p>
+                                                    <p>Implemented popup functionality for the controls and various
+                                                        other elements in application</p>
+                                                    <p>Created a control for implementing LottieFiles animations also
+                                                        created properties for the control mobile and web application
+                                                        witho</p>
+                                                    <p>HTML, Less, Coffeescript, jQuery, Semantic UI, rivet.js,
+                                                        _underscore.js, SVN</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projects-wrapper">
+                            <div class="project-description">Here are some of the projects i worked on</div>
+                            <div class="project-main">
+                                <div class="flip">
+                                    <div class="front">
+                                        <div class="project-lottie-container">
+                                            <lottie-player src="json/moontaxi.json" background="rgb(252,233,234)" speed="1"
+                                                loop autoplay></lottie-player>
+                                        </div>
+                                        <h1 class="text-shadow">Moon Taxi</hi>
+                                    </div>
+                                    <div class="back">
+                                        <h2>Moon Taxi</h2>
+                                        <p>Designed and deployed a real time carpooling webapplication</p>
+                                    </div>
+                                </div>
+                                <div class="flip">
+                                    <div class="front">
+                                        <div class="project-lottie-container">
+                                            <lottie-player
+                                                __src="https://assets2.lottiefiles.com/private_files/lf30_F3v2Nj.json"
+                                                src="json/stockMarket.json" background="#000" speed="1" loop autoplay>
+                                            </lottie-player>
+                                        </div>
+                                        <h1 class="text-shadow">Stock Market Prediction</hi>
+                                    </div>
+                                    <div class="back">
+                                        <h2>Stock Market Prediction</h2>
+                                        <p>Developed and Trained a model to provide an accurate prediction of the stock</p>
+                                    </div>
+                                </div>
+                                <div class="flip">
+                                    <div class="front">
+                                        <div class="project-lottie-container">
+                                            <lottie-player
+                                                __src="https://assets10.lottiefiles.com/private_files/lf30_t7oxjwxh.json"
+                                                src="json/omr.json" background="rgb(0,85,120)" speed="1" loop autoplay>
+                                            </lottie-player>
+                                        </div>
+                                        <h1 class="text-shadow">OMR Reader</hi>
+                                    </div>
+                                    <div class="back">
+                                        <h2>OMR Reader</h2>
+                                        <p>Developed a cost effective OMR reader which is platform independent and can be
+                                            used
+                                            for
+                                            exam evaluation, automated attendance and surveys.</p>
+                                    </div>
+                                </div>
+                                <div class="flip">
+                                    <div class="front">
+                                        <div class="project-lottie-container">
+                                            <lottie-player src="json/spellChecker.json" background="#FF8C00" speed="0.6"
+                                                loop autoplay>
+                                            </lottie-player>
+                                        </div>
+                                        <h1 class="text-shadow">SpellChecker</hi>
+                                    </div>
+                                    <div class="back">
+                                        <h2>SpellChecker</h2>
+                                        <p>Created a software for detecting and replacing incorrect spellings.</p>
+                                    </div>
+                                </div>
+                                <div class="flip">
+                                    <div class="front">
+                                        <div class="project-lottie-container">
+                                            <lottie-player src="json/scholar.json" background="rgb(199,230,255)" speed="1"
+                                                loop autoplay></lottie-player>
+                                        </div>
+                                        <h1 class="text-shadow">Scholar Network Analysis</hi>
+                                    </div>
+                                    <div class="back">
+                                        <h2>Scholar Network Analysis</h2>
+                                        <p>Obtained relationship between various co-authors to better understand the nature
+                                            of
+                                            citations.</p>
+                                    </div>
+                                </div>
+                                <div class="flip">
+                                    <div class="front">
+                                        <div class="project-lottie-container">
+                                            <lottie-player src="json/ecommerce.json" background="#26BC6A" speed="1" loop
+                                                autoplay>
+                                            </lottie-player>
+                                        </div>
+                                        <h1 class="text-shadow">E-commerce</hi>
+                                    </div>
+                                    <div class="back">
+                                        <h2>E-commerce</h2>
+                                        <p>Assited in the development of an online shopping portal.</p>
+                                    </div>
+                                </div>
+                                <div class="flip">
+                                    <div class="front">
+                                        <div class="project-lottie-container">
+                                            <lottie-player src="json/rsa.json" background="rgb(70,107,150)" speed="1" loop
+                                                autoplay></lottie-player>
+                                        </div>
+                                        <h1 class="text-shadow">Enhaned Encyption Algoritham</hi>
+                                    </div>
+                                    <div class="back">
+                                        <h2>Enhaned encyption algoritham</h2>
+                                        <p>Created a customized version of RSA encyption algoritham using Sieve of
+                                            Eratosthenes and multithreading</p>
+                                    </div>
+                                </div>
+                                <div class="flip">
+                                    <div class="front">
+                                        <div class="project-lottie-container">
+                                            <lottie-player src="json/signComms.json" background="black" speed="1" loop
+                                                autoplay></lottie-player>
+                                        </div>
+                                        <h1 class="text-shadow">SignComms</hi>
+                                    </div>
+                                    <div class="back">
+                                        <h2>SignComms</h2>
+                                        <p>Communication platform for the hearing impaired</p>
+                                    </div>
+                                </div>
+                        </div>
+                    </main>
+                </div>
+            </section>
+            <!-- <section data-slide="about-me-wrapper">
                 <section data-slide="about-me">
                     <div class="slide-wrapper">
                         <main>
@@ -263,8 +516,72 @@
                         </main>
                     </div>
                 </section>
+            </section> -->
+            <section data-slide="contact">
+                <div class="slide-wrapper">
+                    <main>
+                        <div class="login-box">
+                            <p class="lead text-contact">and this is my webpage</p>
+                            <h1 class="text-title-contact">Get in touch</h1>
+                            <form>
+                                <div class="user-box">
+                                    <input type="text" name="" required="">
+                                    <label>Name</label>
+                                </div>
+                                <div class="user-box">
+                                    <input type="text" name="" required="">
+                                    <label>Email</label>
+                                </div>
+                                <div class="user-box">
+                                    <textarea rows="1" autofocus></textarea>
+                                    <label>Message</label>
+                                </div>
+                                <a href="#">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    Submit
+                                </a>
+                            </form>
+                        </div>
+                        <div class="icon-conatiner">
+                            <a target="_blank" href="https://www.linkedin.com/in/pranjaljo95"><svg
+                                    data-icon-type="linkedin" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                    viewBox="0 0 50 50">
+                                    <path
+                                        d="M25,2C12.318,2,2,12.317,2,25s10.318,23,23,23s23-10.317,23-23S37.682,2,25,2z M18,35h-4V20h4V35z M16,17 c-1.105,0-2-0.895-2-2c0-1.105,0.895-2,2-2s2,0.895,2,2C18,16.105,17.105,17,16,17z M37,35h-4v-5v-2.5c0-1.925-1.575-3.5-3.5-3.5 S26,25.575,26,27.5V35h-4V20h4v1.816C27.168,20.694,28.752,20,30.5,20c3.59,0,6.5,2.91,6.5,6.5V35z">
+                                    </path>
+                                </svg></a>
+                            <a target="_blank" href="https://github.com/pranjaljo"><svg data-icon-type="git"
+                                    xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50">
+                                    <path
+                                        d="M17.791,46.836C18.502,46.53,19,45.823,19,45v-5.4c0-0.197,0.016-0.402,0.041-0.61C19.027,38.994,19.014,38.997,19,39 c0,0-3,0-3.6,0c-1.5,0-2.8-0.6-3.4-1.8c-0.7-1.3-1-3.5-2.8-4.7C8.9,32.3,9.1,32,9.7,32c0.6,0.1,1.9,0.9,2.7,2c0.9,1.1,1.8,2,3.4,2 c2.487,0,3.82-0.125,4.622-0.555C21.356,34.056,22.649,33,24,33v-0.025c-5.668-0.182-9.289-2.066-10.975-4.975 c-3.665,0.042-6.856,0.405-8.677,0.707c-0.058-0.327-0.108-0.656-0.151-0.987c1.797-0.296,4.843-0.647,8.345-0.714 c-0.112-0.276-0.209-0.559-0.291-0.849c-3.511-0.178-6.541-0.039-8.187,0.097c-0.02-0.332-0.047-0.663-0.051-0.999 c1.649-0.135,4.597-0.27,8.018-0.111c-0.079-0.5-0.13-1.011-0.13-1.543c0-1.7,0.6-3.5,1.7-5c-0.5-1.7-1.2-5.3,0.2-6.6 c2.7,0,4.6,1.3,5.5,2.1C21,13.4,22.9,13,25,13s4,0.4,5.6,1.1c0.9-0.8,2.8-2.1,5.5-2.1c1.5,1.4,0.7,5,0.2,6.6c1.1,1.5,1.7,3.2,1.6,5 c0,0.484-0.045,0.951-0.11,1.409c3.499-0.172,6.527-0.034,8.204,0.102c-0.002,0.337-0.033,0.666-0.051,0.999 c-1.671-0.138-4.775-0.28-8.359-0.089c-0.089,0.336-0.197,0.663-0.325,0.98c3.546,0.046,6.665,0.389,8.548,0.689 c-0.043,0.332-0.093,0.661-0.151,0.987c-1.912-0.306-5.171-0.664-8.879-0.682C35.112,30.873,31.557,32.75,26,32.969V33 c2.6,0,5,3.9,5,6.6V45c0,0.823,0.498,1.53,1.209,1.836C41.37,43.804,48,35.164,48,25C48,12.318,37.683,2,25,2S2,12.318,2,25 C2,35.164,8.63,43.804,17.791,46.836z">
+                                    </path>
+                                </svg></a>
+                            <a target="_blank" href=""><svg data-icon-type="email"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z" />
+                                </svg></a>
+                            <a target="_blank" href="https://www.hackerrank.com/__pranjal"><svg
+                                    data-icon-type="hackerrank" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 32 32">
+                                    <path
+                                        d="M16 0c1.714 0 13 6.516 13.854 8c.859 1.484.859 14.516 0 16S17.713 32 16 32c-1.714 0-13-6.516-13.859-8c-.854-1.484-.854-14.516 0-16C3 6.516 14.287 0 16 0zm3.063 9.068a.344.344 0 0 0-.349.344v5.167h-5.427v-5.37h.932a.34.34 0 0 0 .339-.344a.347.347 0 0 0-.161-.292l-2.099-2.01a.386.386 0 0 0-.302-.146a.35.35 0 0 0-.276.141L9.48 8.574a.343.343 0 0 0 .183.636h.938l.01 13.38c0 .193.146.344.339.344h1.99a.343.343 0 0 0 .344-.344v-5.339h5.432v5.536h-.932a.343.343 0 0 0-.183.636l2.104 2.016c.057.083.188.146.302.146s.208-.063.276-.146l2.24-2.016a.343.343 0 0 0 .161-.292a.347.347 0 0 0-.344-.344h-.938l-.01-13.375a.34.34 0 0 0-.339-.349h-1.99z">
+                                    </path>
+                                </svg></a>
+                            <a target="_blank" href="https://disqus.com/by/Pro95/"><svg data-icon-type="disqus"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12.438 23.654c-2.853 0-5.46-1.04-7.476-2.766L0 21.568l1.917-4.733A11.7 11.7 0 0 1 .875 12C.875 5.564 6.05.346 12.44.346C18.82.346 24 5.564 24 12c0 6.438-5.176 11.654-11.562 11.654zm6.315-11.687v-.033c0-3.363-2.373-5.76-6.462-5.76H7.877V17.83h4.35c4.12 0 6.525-2.5 6.525-5.863h.004zm-6.415 2.998h-1.29V9.04h1.29c1.897 0 3.157 1.08 3.157 2.945v.03c0 1.884-1.26 2.95-3.157 2.95z">
+                                    </path>
+                                </svg></a>
+                        </div>
+                    </main>
+                </div>
             </section>
-            <section data-slide="projects">
+            <!-- <section data-slide="projects">
                 <div class="slide-wrapper">
                     <main>
                         <div class="project-description">Here are some of the projects i worked on</div>
@@ -387,7 +704,7 @@
                             </div>
                     </main>
                 </div>
-            </section>
+            </section> -->
         </div>
     </div>
     <!-- <script src="js/temp---star.js"></script> -->

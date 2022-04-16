@@ -19,13 +19,13 @@ Reveal.on( 'slidechanged', event => {
 	header.querySelectorAll(".active").forEach((btn) => {btn.classList.remove('active')});
 	if(event.indexh === 0){
 		header.querySelector("button[data-header='home']").classList.add('active')
-    header.querySelector('.inner-nav-container button').innerHTML = header.querySelectorAll(`.inner-nav-link`)[0].innerHTML
+    //header.querySelector('.inner-nav-container button').innerHTML = header.querySelectorAll(`.inner-nav-link`)[0].innerHTML
 	} else if(event.indexh ===1){
-    header.querySelector('.inner-nav-container button').classList.add('active');
-    header.querySelector('.inner-nav-container button').innerHTML = header.querySelectorAll(`.inner-nav-link`)[event.indexv].innerHTML
+    header.querySelector("button[data-header='about-me-new']").classList.add('active')
+    //header.querySelector('.inner-nav-container button').innerHTML = header.querySelectorAll(`.inner-nav-link`)[event.indexv].innerHTML
 	} else if(event.indexh ===2){
-		header.querySelector("button[data-header='projects']").classList.add('active')
-    header.querySelector('.inner-nav-container button').innerHTML = header.querySelectorAll(`.inner-nav-link`)[0].innerHTML
+		header.querySelector("button[data-header='contact']").classList.add('active')
+    //header.querySelector('.inner-nav-container button').innerHTML = header.querySelectorAll(`.inner-nav-link`)[0].innerHTML
 	}
   } );
 
