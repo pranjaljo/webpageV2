@@ -1,13 +1,13 @@
 :root{
-    --exp-title-width: 180px;
+    --exp-title-width: 200px;
     --exp-company-color: #e64700;
     --about-me-box-width: 50rem;
     --exp-margin-top: 16rem;
 }
 .about-me-wrapper{
-    margin: 10rem auto 0;
+    margin: 0 auto;
     padding: 2rem;
-    width: calc(var(--about-me-box-width) - 5.5rem);
+    width: calc(var(--about-me-box-width) - 4rem);
     line-height: 2;
     box-shadow: rgb(0 0 0 / 56%) 0px 22px 70px 4px;
     text-align: justify;
@@ -15,12 +15,8 @@
     background-color: #1f2a399e;
 }
 .lottie-container-2{
-    position: absolute;
-    top: -150px;
-    right: 0;
     height: 150px;
     overflow: hidden;
-
 }
 
 .lottie-container-2 lottie-player,
@@ -28,18 +24,88 @@
     height:200px;
     width:200px;
 }
+.lottie-container-4 lottie-player{
+    height: 200px;
+}
 
 .lottie-container-3{
-    margin-bottom: -4rem;
-    margin-top: calc(var(--exp-margin-top)*-1 + 4rem);
-    position: absolute;
+    height: fit-content;
+    margin-bottom: -2rem;
+}
+
+.lottie-container-4{
+    height: 161px;
+    width: 175px;
+    overflow-y: hidden;
+
 }
 
 .box-title{
-    position:absolute;
-    top:-2rem;
-    left: calc(var(--about-me-box-width) + 4rem);
-    font-weight: 600;
+    height: 1.75rem;
+    width: -webkit-fill-available;
+    margin-bottom: 0.25rem;
+    padding-left: 2rem;
+}
+
+.wave-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.box-title h2 {
+    font-size: 1.75rem;
+    position: absolute;
+    margin: 0;
+    display: block;
+    width: 100%;
+    text-align: right;
+}
+
+.even .box-title h2{
+    text-align: left;
+}
+
+.box-title .border {
+	color: black;  
+  text-shadow:
+    -1px -1px 0 white, 
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;  
+}
+
+.box-title .wave {
+	color: white;
+	animation: wave 3s ease-in-out infinite;
+}
+
+@keyframes wave {
+	0%, 100% {
+		clip-path: polygon(0% 47%, 10% 48%, 33% 54%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+	}
+
+	50% {
+		clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+	}
+}
+
+.content-header-wrapper{
+    width: var(--about-me-box-width);
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    /* border:1px solid beige; */
+    margin: 0 auto;
+}
+
+.content-header-wrapper.even{
+    flex-direction: row-reverse;
+}
+
+.content-header-wrapper.height-300{
+    height: 300px;
 }
 
 .exp-mega-wrapper{
@@ -48,8 +114,11 @@
 
 .exp-wrapper{
     width: fit-content;
-    margin: var(--exp-margin-top) auto;
+    /* margin: var(--exp-margin-top) auto; */
+    /* padding-top: 2rem; */
+    margin: 0 auto;
     box-shadow: rgb(0 0 0 / 56%) 0px 22px 70px 4px;
+    border-radius: 10px;
 }
 
 .exp-wrapper input {
@@ -60,7 +129,7 @@
 .exp-wrapper .row {
     display: flex;
     width: var(--about-me-box-width);
-    margin: 3rem auto;
+    flex-direction: column;
     /* box-shadow: rgb(0 0 0 / 56%) 0px 22px 70px 4px;
     background: #2c3e50;
     border-radius:10px; */
@@ -68,9 +137,15 @@
 .exp-wrapper .row .col {
     flex: 1;
 }
+
+.exp-wrapper .row .col.col-description{
+    padding: 2.5rem 2rem 2rem 2rem;
+    text-align: left;
+    line-height: 2;
+}
 /* Accordion styles */
 .exp-wrapper .tabs {
-    border-radius: 8px;
+    border-radius: 0px 0px 8px 8px;
     overflow: hidden;
     /* box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5); */
 }
@@ -83,7 +158,7 @@
 .exp-wrapper .tab-label {
     display: flex;
     justify-content: space-between;
-    padding: 1em;
+    padding: 1rem 2rem;
     font-weight: bold;
     cursor: pointer;
 }
@@ -192,4 +267,11 @@
 .exp-wrapper a:hover::after {
     width: 100%;
     background: var(--exp-company-color);
+}
+
+.projects-wrapper{
+    width: calc(var(--about-me-box-width));
+    line-height: 2;
+    box-shadow: rgb(0 0 0 / 56%) 0px 22px 70px 4px;
+    margin:0 auto;
 }
