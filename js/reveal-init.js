@@ -13,18 +13,20 @@ Reveal.initialize({
     transitionSpeed: 'slow'
 });
 
-const body = document.querySelector("body");
+const header = document.querySelector("header");
 Reveal.on( 'slidechanged', event => {
-    if(event.indexh === 0 && event.indexv === 0){
-        body.classList.add('back-center');
-    } else{
-        body.classList.remove('back-center');
-        //body.style.setProperty("background", "radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%)");
-    }
+	console.log('sdsd');
+	header.querySelectorAll(".active").forEach((btn) => {btn.classList.remove('active')});
+	if(event.indexh === 0){
+		header.querySelector("button[data-header='home']").classList.add('active')
+    //header.querySelector('.inner-nav-container button').innerHTML = header.querySelectorAll(`.inner-nav-link`)[0].innerHTML
+	} else if(event.indexh ===1){
+    header.querySelector("button[data-header='about-me-new']").classList.add('active')
+    //header.querySelector('.inner-nav-container button').innerHTML = header.querySelectorAll(`.inner-nav-link`)[event.indexv].innerHTML
+	} else if(event.indexh ===2){
+		header.querySelector("button[data-header='contact']").classList.add('active')
+    //header.querySelector('.inner-nav-container button').innerHTML = header.querySelectorAll(`.inner-nav-link`)[0].innerHTML
+	}
   } );
 
 
-yolo = function(event){
-    console.log(event);
-    event.stopPropagation();
-}

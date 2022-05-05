@@ -91,11 +91,6 @@
     flex-wrap: wrap;
 }
 
-.project-description {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-
 .project-main {
     display: flex;
     flex-wrap: wrap;
