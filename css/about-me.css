@@ -1,13 +1,14 @@
 :root{
     --exp-title-width: 200px;
     --exp-company-color: #e64700;
-    --about-me-box-width: 50rem;
+    --about-me-box-width: 100%;
     --exp-margin-top: 16rem;
 }
 .about-me-wrapper{
     margin: 0 auto;
     padding: 2rem;
     width: calc(var(--about-me-box-width) - 4rem);
+    max-width:calc(50rem - 4rem);
     line-height: 2;
     box-shadow: rgb(0 0 0 / 56%) 0px 22px 70px 4px;
     text-align: justify;
@@ -92,6 +93,7 @@
 
 .content-header-wrapper{
     width: var(--about-me-box-width);
+    max-width:50rem;
     height: 200px;
     display: flex;
     justify-content: space-between;
@@ -129,10 +131,8 @@
 .exp-wrapper .row {
     display: flex;
     width: var(--about-me-box-width);
+    max-width:50rem;
     flex-direction: column;
-    /* box-shadow: rgb(0 0 0 / 56%) 0px 22px 70px 4px;
-    background: #2c3e50;
-    border-radius:10px; */
 }
 .exp-wrapper .row .col {
     flex: 1;
@@ -269,9 +269,41 @@
     background: var(--exp-company-color);
 }
 
+.project-description{
+    padding: 2rem;
+    line-height: 2;
+    text-align: left;
+}
+
 .projects-wrapper{
     width: calc(var(--about-me-box-width));
+    max-width:50rem;
     line-height: 2;
     box-shadow: rgb(0 0 0 / 56%) 0px 22px 70px 4px;
     margin:0 auto;
+}
+
+.project-new{
+    padding: 0 2rem 2rem 2rem;
+    width: -webkit-fill-available;
+    height: 18rem;
+    position: relative;
+}
+
+.project{
+    position: absolute;
+    height: calc(100% - 2rem);
+    width: calc((100% - 4rem)*3/5);
+    border:1px solid bisque;
+    z-index:14;
+    left:0;
+}
+.project-2{
+    left:calc((100% - 4rem)*1/5);
+    z-index:15;
+}
+.project-3{
+    left:calc((100% - 4rem)*2/5);
+    z-index:16;
+    background-image: url("Sample_screenShot4.png");
 }
