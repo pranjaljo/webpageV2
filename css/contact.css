@@ -1,3 +1,8 @@
+.error{
+    border: 2px solid #a0262e !important;
+    background: #d6c0c0 !important;
+}
+
 .icon-conatiner {
     position: absolute;
     top: 50%;
@@ -97,6 +102,16 @@
     transition: .5s;
     letter-spacing: 4px
 }
+
+.error-message{
+    display: flex;
+    color: #c44f4f;
+    font-size: 14px;
+    font-weight: 600;
+    padding-bottom: 0.3rem;
+}
+
+
 
 .login-box a:hover {
     background: #03e9f4;
