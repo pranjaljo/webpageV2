@@ -27,8 +27,6 @@ sendEmail = function () {
         message: msg,
     }
     hideErrorFields();
-    emailAnimation();
-    return
     if (validate(params)) {
         showLoader();
         emailjs.send("service_gnaxs4m", "template_sawg1sh", params, "arl--CRC4wsn1bJXB")
