@@ -67,4 +67,5 @@ body {
 .blur {
     opacity: 1;
     visibility: var(--transition-blur);
+    /* backdrop-filter: blur(0.5px); */
 }

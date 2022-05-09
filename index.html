@@ -26,13 +26,16 @@
 <body>
     <header>
         <main>
-            <button data-header="home" class="active" onmouseenter="blurBackground()" onmouseleave="unBlurBackground()" onclick="location='#/1'">
+            <button data-header="home" class="active" onmouseenter="blurBackground()" onmouseleave="unBlurBackground()"
+                onclick="location='#/1'">
                 <span class="nav-link">Home</span>
             </button>
-            <button data-header="about-me-new" onmouseenter="blurBackground()" onmouseleave="unBlurBackground()" onclick="location='#/2'">
+            <button data-header="about-me-new" onmouseenter="blurBackground()" onmouseleave="unBlurBackground()"
+                onclick="location='#/2'">
                 <span class="nav-link">About me</span>
             </button>
-            <button data-header="contact" onmouseenter="blurBackground()" onmouseleave="unBlurBackground()" onclick="location='#/3'">
+            <button data-header="contact" onmouseenter="blurBackground()" onmouseleave="unBlurBackground()"
+                onclick="location='#/3'">
                 <span class="nav-link">Contact</span>
             </button>
             <button onmouseenter="blurBackground()" onmouseleave="unBlurBackground()">
@@ -65,8 +68,8 @@
                     <main>
                         <div class="content-header-wrapper">
                             <div class="lottie-container-3">
-                                <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_euaveaxu.json" background="transparent"
-                                    speed="1" loop autoplay></lottie-player>
+                                <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_euaveaxu.json"
+                                    background="transparent" speed="1" loop autoplay></lottie-player>
                             </div>
                             <div class="box-title">
                                 <div class="wave-container">
@@ -74,7 +77,7 @@
                                     <h2 class="wave">01. Who am I ?</h2>
                                 </div>
                             </div>
-                            
+
                         </div>
                         <div class="about-me-wrapper">
                             <div class="about-me-container">
@@ -99,8 +102,8 @@
                             </div> -->
                             <div class="lottie-container-2">
                                 <lottie-player src="https://assets7.lottiefiles.com/private_files/lf30_7kuqvbif.json"
-                                --src="json/moonrover.json" background="transparent" speed="1" loop autoplay>
-                            </lottie-player>
+                                    --src="json/moonrover.json" background="transparent" speed="1" loop autoplay>
+                                </lottie-player>
                             </div>
                             <div class="box-title">
                                 <div class="wave-container">
@@ -109,11 +112,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="exp-mega-wrapper">     
+                        <div class="exp-mega-wrapper">
                             <div class="exp-wrapper">
                                 <div class="row">
                                     <div class="col col-description">
-                                        I've had the pleasure of working with three wonderful orgainization, two of which I worked as an intern during my undergard. Since my graduation I've been working as a software developer for Kyndryl
+                                        I've had the pleasure of working with three wonderful orgainization, two of
+                                        which I worked as an intern during my undergard. Since my graduation I've been
+                                        working as a software developer for Kyndryl
                                     </div>
                                     <div class="col">
                                         <div class="tabs">
@@ -238,26 +243,37 @@
                         <div class="login-box">
                             <p class="lead text-contact">and this is my webpage</p>
                             <h1 class="text-title-contact">Get in touch</h1>
-                            <form>
+                            <form name="form-email">
                                 <div class="user-box">
-                                    <input type="text" name="" required="">
-                                    <label>Name</label>
+                                    <span class="error-message hidden">It seems you forgot to type your email</span>
+                                    <input type="text" id="userName" name="userName" placeholder="Name">
                                 </div>
                                 <div class="user-box">
-                                    <input type="text" name="" required="">
-                                    <label>Email</label>
+                                    <span class="error-message hidden">Are you sure the email is correct?</span>
+                                    <input type="text" id="userEmail" class="disable" placeholder="Email">
                                 </div>
                                 <div class="user-box">
-                                    <textarea rows="1" autofocus></textarea>
-                                    <label>Message</label>
+                                    <span class="error-message hidden">It seems you forgot to type the message</span>
+                                    <textarea rows="5" id="userMsg" class="disable" placeholder="Message"></textarea>
                                 </div>
-                                <a href="#">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    Submit
-                                </a>
+                                <button type="button" class="button" onclick="sendEmail()">
+                                    <span class="default">
+                                        <div class="default-text">Send</div>
+                                        <div class="loader hidden">
+                                            <span class="loader-span"></span>
+                                            <span class="loader-span"></span>
+                                            <span class="loader-span"></span>
+                                            <span class="loader-span"></span>
+                                            <span class="loader-span"></span>
+                                        </div>
+                                    </span>
+                                    <span class="success">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.25 16.518l-4.5-4.319 1.396-1.435 3.078 2.937 6.105-6.218 1.421 1.409-7.5 7.626z"/></svg>
+                                        Email sent</span>
+                                    <div class="left"></div>
+                                    <div class="right"></div>
+
+                                </button>
                             </form>
                         </div>
                         <div class="icon-conatiner">
@@ -274,14 +290,13 @@
                                         d="M17.791,46.836C18.502,46.53,19,45.823,19,45v-5.4c0-0.197,0.016-0.402,0.041-0.61C19.027,38.994,19.014,38.997,19,39 c0,0-3,0-3.6,0c-1.5,0-2.8-0.6-3.4-1.8c-0.7-1.3-1-3.5-2.8-4.7C8.9,32.3,9.1,32,9.7,32c0.6,0.1,1.9,0.9,2.7,2c0.9,1.1,1.8,2,3.4,2 c2.487,0,3.82-0.125,4.622-0.555C21.356,34.056,22.649,33,24,33v-0.025c-5.668-0.182-9.289-2.066-10.975-4.975 c-3.665,0.042-6.856,0.405-8.677,0.707c-0.058-0.327-0.108-0.656-0.151-0.987c1.797-0.296,4.843-0.647,8.345-0.714 c-0.112-0.276-0.209-0.559-0.291-0.849c-3.511-0.178-6.541-0.039-8.187,0.097c-0.02-0.332-0.047-0.663-0.051-0.999 c1.649-0.135,4.597-0.27,8.018-0.111c-0.079-0.5-0.13-1.011-0.13-1.543c0-1.7,0.6-3.5,1.7-5c-0.5-1.7-1.2-5.3,0.2-6.6 c2.7,0,4.6,1.3,5.5,2.1C21,13.4,22.9,13,25,13s4,0.4,5.6,1.1c0.9-0.8,2.8-2.1,5.5-2.1c1.5,1.4,0.7,5,0.2,6.6c1.1,1.5,1.7,3.2,1.6,5 c0,0.484-0.045,0.951-0.11,1.409c3.499-0.172,6.527-0.034,8.204,0.102c-0.002,0.337-0.033,0.666-0.051,0.999 c-1.671-0.138-4.775-0.28-8.359-0.089c-0.089,0.336-0.197,0.663-0.325,0.98c3.546,0.046,6.665,0.389,8.548,0.689 c-0.043,0.332-0.093,0.661-0.151,0.987c-1.912-0.306-5.171-0.664-8.879-0.682C35.112,30.873,31.557,32.75,26,32.969V33 c2.6,0,5,3.9,5,6.6V45c0,0.823,0.498,1.53,1.209,1.836C41.37,43.804,48,35.164,48,25C48,12.318,37.683,2,25,2S2,12.318,2,25 C2,35.164,8.63,43.804,17.791,46.836z">
                                     </path>
                                 </svg></a>
-                            <a target="_blank" href=""><svg data-icon-type="email"
-                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <a target="_blank" href=""><svg data-icon-type="email" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24">
                                     <path
                                         d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z" />
                                 </svg></a>
                             <a target="_blank" href="https://www.hackerrank.com/__pranjal"><svg
-                                    data-icon-type="hackerrank" xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 32 32">
+                                    data-icon-type="hackerrank" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                                     <path
                                         d="M16 0c1.714 0 13 6.516 13.854 8c.859 1.484.859 14.516 0 16S17.713 32 16 32c-1.714 0-13-6.516-13.859-8c-.854-1.484-.854-14.516 0-16C3 6.516 14.287 0 16 0zm3.063 9.068a.344.344 0 0 0-.349.344v5.167h-5.427v-5.37h.932a.34.34 0 0 0 .339-.344a.347.347 0 0 0-.161-.292l-2.099-2.01a.386.386 0 0 0-.302-.146a.35.35 0 0 0-.276.141L9.48 8.574a.343.343 0 0 0 .183.636h.938l.01 13.38c0 .193.146.344.339.344h1.99a.343.343 0 0 0 .344-.344v-5.339h5.432v5.536h-.932a.343.343 0 0 0-.183.636l2.104 2.016c.057.083.188.146.302.146s.208-.063.276-.146l2.24-2.016a.343.343 0 0 0 .161-.292a.347.347 0 0 0-.344-.344h-.938l-.01-13.375a.34.34 0 0 0-.339-.349h-1.99z">
                                     </path>
@@ -298,7 +313,8 @@
             </section>
         </div>
     </div>
-    <!-- <script src="js/temp---star.js"></script> -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="test.js"></script>
     <script src="js/dist/gsap.js"></script>
     <script src="js/dist/lottie.js"></script>
     <script src="js/dist/reveal.js"></script>
